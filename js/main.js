@@ -14,6 +14,10 @@ let isInteger,
 // expression that looks at the value of `isSafeInteger`. When `isSafeInteger`
 // becomes `true`, the `while` loop should stop looping.
 
+// In order for number to be valid, we need to know:
+// - Must be an integer
+// - Must be greater than zero
+
 // TODO: Inside `while` loop prompt the user for the `maxNumber` value.
 
 // TODO: Inside the `while` loop, use a conditional to verify if the `maxNumber`
