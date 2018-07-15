@@ -17,43 +17,36 @@ isInteger = false;
 // becomes `true`, the `while` loop should stop looping.
 
 while(!isInteger) {
-    
-   // In order for number to be valid, we need to know:
-   // - Must be an integer
-   // - Must be greater than zero
    
    // TODO: Inside `while` loop prompt the user for the `maxNumber` value.
-   maxNumber = prompt('Enter a number over 0 (integer): 20');
+   maxNumber = prompt('Enter a number over 0 (integer):', 20);
    
    // TODO: Inside the `while` loop, use a conditional to verify if the `maxNumber`
    // is a suitable integer. (It should be an integer greater than zero.)
    
    maxNumber = parseInt(maxNumber);
-   if (Number.isSafeInteger(maxNumber) && maxNumber > 0) {
+   if (Number.isSafeInteger(maxNumber) && maxNumber > 0){
        isInteger = true;
-   }
+   }   
 }
 // TODO: Initialize the `fbResults` variable to an empty Array
 
-fbResults =[];
+fbResults = [];
 
 // TODO: Create a `for` loop that will execute the `maxNumber` of times.
 
-for (let i=1; <= maxNumber i++){
-    
-    // TODO: Create logic inside the `for` loop to calculate FizzBuzz.  This will
-    // require the use of several conditional statements that use the `%` operator.
-    // Store the results of this logic in an array called `fbResults`.
-    if (i % 15 === 0)){
+for (let i=1;i <= maxNumber; i++){ 
+    // TODO: Create logic inside the `for` loop to calculate FizzBuzz.
+    if (i % 15 == 0) {
             fbResults.push('FizzBuzz');
-        }else if (i % 3 === 0)) {
+        } else if (i % 3 == 0) {
             fbResults.push('Fizz');
-        }else if (i % 5 === 0)) {
+        } else if (i % 5 == 0) {
             fbResults.push('Buzz');
-        }else {
+        } else {
             fbResults.push(i);
         }
-
+}
 // TODO: In preparation for creating the output text for your FizzBuzz results,
 // initialize the `fbText` variable to an empty string.
 
@@ -63,7 +56,7 @@ fbText = '';
 // into the variable `fbText`.
 
 for (let result of fbResults) {
-    fbText = fbText = "\n";
+    fbText = fbText + result +"\n";
 } 
 
 ///////////////////////////////////////////////////////////////////////
