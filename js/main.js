@@ -29,14 +29,15 @@ while(!isInteger) {
        isInteger = true;
    }   
 }
-// TODO: Initialize the `fbResults` variable to an empty Array
+    // TODO: Initialize the `fbResults` variable to an empty Array
 
 fbResults = [];
 
-// TODO: Create a `for` loop that will execute the `maxNumber` of times.
+    // TODO: Create a `for` loop that will execute the `maxNumber` of times.
 
 for (let i=1;i <= maxNumber; i++){ 
     // TODO: Create logic inside the `for` loop to calculate FizzBuzz.
+    
     if (i % 15 == 0) {
             fbResults.push('FizzBuzz');
         } else if (i % 3 == 0) {
@@ -47,13 +48,14 @@ for (let i=1;i <= maxNumber; i++){
             fbResults.push(i);
         }
 }
-// TODO: In preparation for creating the output text for your FizzBuzz results,
-// initialize the `fbText` variable to an empty string.
+
+    // TODO: In preparation for creating the output text for your FizzBuzz results,
+    // initialize the `fbText` variable to an empty string.
 
 fbText = '';
 
-// TODO: Use a `for ... of` loop to concatenate the values from `fbResults`
-// into the variable `fbText`.
+    // TODO: Use a `for ... of` loop to concatenate the values from `fbResults`
+    // into the variable `fbText`.
 
 for (let result of fbResults) {
     fbText = fbText + result +"\n";
